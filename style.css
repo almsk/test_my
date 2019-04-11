@@ -55,10 +55,10 @@
  /*    my code */
 
  header {
-    position: fixed;
+     position: fixed;
     text-align: center;      
     top: 0;
-    width: 100%;
+    width: 100%; 
  }
 
 
@@ -67,7 +67,8 @@
 }
 
 main {
-    padding: 100px;
+    padding-top: 200px;
+    text-decoration: line-through;
     
 }
 .background {
@@ -88,7 +89,7 @@ img[alt*="Image 2"]  {
 }
 
 .background img {
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 span {
