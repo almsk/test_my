@@ -1,0 +1,203 @@
+
+        header {
+            background-color: white;
+            text-align: center;
+           
+            top: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        span {
+            width: 95%;
+           padding: .5rem;
+            border: 1px solid black;
+            margin: .5rem;
+            display: inline-block;
+        }
+              
+        .container {
+            border: 2px solid black;
+        }
+
+        .item {
+            border: 2px solid blue;
+            height: 10rem;
+            width: 10rem;
+            margin: 1rem;  
+        }
+
+        .mediaquery {
+            border: 2px solid black;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 20rem;
+            width: 20rem;
+        }
+        
+        .relative, .absolute {
+            border: 2px solid blue;
+        }
+
+        .relative {
+            height: 10rem;
+            width: 10rem;
+        }
+
+        .absolute {
+            height: 5rem;
+            width: 5rem;
+        }
+
+       
+ /*    my code */
+
+ header {
+    position: fixed;
+    width: 100%;
+ }
+
+
+.blue {
+    color: blue;
+}
+
+main {
+    padding: 100px;
+    
+}
+.background {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(images/tree.jpg);
+    background-size: cover;
+    width: 900px;
+    height: 900px;
+}
+
+img[alt*="Image 2"]  {
+    border: 3px solid blue;
+    padding: 10px;
+}
+
+.background img {
+    margin: 50px auto;
+}
+
+span {
+    background: greenyellow;
+}
+@media screen and (max-width: 400px) {
+    .mediaquery {
+        background-color: blue;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .mediaquery {
+        background-color: yellow;
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mediaquery {
+        background-color: red;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .mediaquery {
+        background-color: purple;
+        width: 12rem;
+        height: 12rem;
+    }
+}
+.relative {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 5rem;
+}
+
+.container {
+    display: flex;
+     flex-flow: row wrap;
+    
+}
+
+.item {
+    
+    flex-grow: 3;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    border: 2px solid black;
+}
+
+
+.cell {
+    border: 1px solid black;
+}
+.two {
+    
+    grid-row: 2/4;
+}
+.three {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.seven {
+    grid-column: 2/4;
+}
+
+.footertitle {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+
+footer ul {
+    background-color: deepskyblue;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: block;
+
+}
+a:hover {
+    background: royalblue;
+    
+}
